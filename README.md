@@ -3,6 +3,7 @@
 Using Hand landmarks legacy as well as upgraded solutions provided by Mediapipe to control mouse cursor, credited to Viet Nguyen @uvipen
 
 However trying to apply Upgraded solutions encountered an issue, which will be well-described in from user @rsandler00 comment below:
+
 "Hi,
 
 I am running on a windows machine and need to install tf-models-official (version 2.13) for computer vision purposes (nothing to do w/ TF Text). However, tf-models-official has tensorflow-text as a dependency. Since there is currently no support for tensorflow-text in windows (see here), this is screwing up my whole setup
