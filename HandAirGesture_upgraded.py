@@ -1,5 +1,5 @@
 import cv2
-import pydirectinput as pdi
+# import pydirectinput as pdi
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
@@ -17,7 +17,7 @@ VisionRunningMode = mp.tasks.vision.RunningMode
 def print_result(result: HandLandmarkerResult, output_image: mp.Image, timestamp_ms: int):
     print('hand landmarker result: {}'.format(result))
 
-base_options=BaseOptions(model_asset_path='C:/Users/Admin/Code Projects/Hand landmark cursor control/Model/hands_landmark.task')
+base_options=BaseOptions(model_asset_path='Model/hand_landmarker.task')
 options = HandLandmarkerOptions(base_options=base_options, running_mode=VisionRunningMode.LIVE_STREAM, result_callback=print_result, num_hands=2)
 
 ## .task file could not be loaded in Windows 11 so far ##
@@ -39,3 +39,4 @@ with HandLandmarker.create_from_options(options) as landmarker: # Initializing l
         # The hand landmarker must be created with the live stream mode.
         # landmarker_result = landmarker.detect_async(mp_image, frame_timestamp_ms)
 
+        
