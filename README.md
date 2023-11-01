@@ -2,7 +2,7 @@
 
 Using Hand landmarks legacy as well as upgraded solutions provided by Mediapipe to control mouse cursor, credited to Viet Nguyen @uvipen
 
-Legacy Solutions work quite well. However with Upgraded version, I encounter an issue where it seems to be known issue in Windows related to 'pyyaml' and 'tf datasets' versions, which in turn make pip looking at multiple versions of mediapipe-model-maker to determine which version is compatible with other requirements, and in the end unsuccessfully resolve the issue.
+Legacy Solutions work quite well. However with Upgraded version, I encounter an issue where it seems to be a known issue in Windows related to 'pyyaml' and 'tf datasets' versions, which in turn make pip looking at multiple versions of mediapipe-model-maker to determine which version is compatible with other requirements, and in the end unable to resolve the issue.
 
 Solution log using Windows Subsystem for Linux(WSL):
 
